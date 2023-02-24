@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Morpion </title>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1> JEU DE MORPION </h1>
+
+    <div class="board">
+        <div class=ligne>
+            <div class="square" data-cell="0"></div>
+            <div class="square" data-cell="1"></div>
+            <div class="square" data-cell="2"></div>
+        </div>
+        <div class=ligne>
+            <div class="square" data-cell="3"></div>
+            <div class="square" data-cell="4"></div>
+            <div class="square" data-cell="5"></div>
+        </div>
+        <div class=ligne>
+            <div class="square" data-cell="6"></div>
+            <div class="square" data-cell="7"></div>
+            <div class="square" data-cell="8"></div>
+
+        </div>
+    </div>
+    <div class="boutton">
+        <a href="index.html"><input type="button" name="Rejouer" value="Rejouer" /></a>
+    </div>
+    <div class="joueurCountTable">
+        <div class="joueur">
+            <p> <strong> joueur 1 </strong> </p>
+            <p id='joueur1'> <strong> 0 </strong> </p>
+
+        </div>
+        <div class="joueur">
+            <p> <strong> joueur 2 </strong> </p>
+            <p id='joueur2'> <strong> 0 </strong> </p>
+
+        </div>
+    </div>
+
+    <div id="timer"></div>
+    <div class="chrono">
+        <button onclick='resetTimer()'> Eteindre le chrono </button>
+        <button onclick='startTimer()'> Commencer le chrono </button>
+    </div>
+    <script src="js/Joueur.js"></script>
+    <script src="js/Board.js"></script>
+    <script src="js/Chrono.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
